@@ -1,178 +1,178 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-#map{
-    height: 100vh;
+#map {
+  height: 100vh;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    left: 20px;
-    top: 0;
-    height: 100vh;
-    z-index: 10000;
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 20px;
+  top: 0;
+  height: 100vh;
+  z-index: 10000;
 }
 
-.sidebar{
-    background: rgba(53, 52, 52, 0.6);
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 80px;
-    margin-bottom: 10px;
-    color: #fff;
-    transition: all 0.3s;
+.sidebar {
+  background: rgba(53, 52, 52, 0.6);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  color: #fff;
+  transition: all 0.3s;
 }
 
-.sidebar h1{
-    margin-bottom: 10px;
-    text-align: center;
-    padding: 5px;
-    background: rgba(53, 52, 52, 0.6);
-    border-radius: 10px;
-    font-family: "Edu SA Beginner", cursive;
-    font-size: 25px;
-    letter-spacing: 2px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.sidebar h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 5px;
+  background: rgba(53, 52, 52, 0.6);
+  border-radius: 10px;
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 25px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.sidebar:hover{
-    background: rgba(53, 52, 52, 1);
+.sidebar:hover {
+  background: rgba(53, 52, 52, 1);
 }
 
 /*! Form Alanı */
-form{
-    display: none;
-    flex-direction: column;
-    gap: 20px;    
+form {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
 }
 
-form .field{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-form .field input,select{
-    border: none;
-    outline: none;
-    padding: 5px;
-    border-radius: 10px;
+form .field input,
+select {
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 10px;
 }
 
-form button{
-    cursor: pointer;
-    border: none;
-    outline: none;
-    padding: 6px;
-    border-radius: 10px;
-    background: black;
-    color: #fff;
-    font-weight: bold;
+form button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 6px;
+  border-radius: 10px;
+  background: black;
+  color: #fff;
+  font-weight: bold;
 }
 
-/* Liste Alanı */
-ul{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    font-family: "poppins",sans-serif;
-    font-size: 15px;
-    white-space: nowrap;
-    margin-top: 10px;
-    overflow: auto;
-    height: 100%;
-    padding-right: 10px;
+/*! Liste Alanı */
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  white-space: nowrap;
+  margin-top: 10px;
+  overflow: auto;
+  height: 100%;
+  padding-right: 10px;
 }
 
-ul::-webkit-scrollbar{
-    background: black;
-    width: 12,5px;
-    border-radius: 10px;
+ul::-webkit-scrollbar {
+  background: black;
+  width: 12.5px;
+  border-radius: 10px;
 }
 
-ul::-webkit-scrollbar-thumb{
-    background: gray;
-    border-radius: 10px;
+ul::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
 }
 
-li{
-    display: flex;
-    justify-content: space-between;
-    background: #575757;
-    padding: 10px;
-    border-radius: 10px;
-    color: #fff;
-    align-items: center;
-    position: relative;
-    width: 200px;
+li {
+  display: flex;
+  justify-content: space-between;
+  background: #575757;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  align-items: center;
+  position: relative;
+  width: 200px;
 }
 
-li div{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+li div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-li div p{
-    border-bottom: 1px solid rgba(148, 148, 148, 0.493);
+li div p {
+  border-bottom: 1px solid rgba(148, 148, 148, 0.27);
 }
 
-li div p span{
-    font-weight: 900;
+li div p span {
+  font-weight: 900;
 }
 
-li #delete{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    border-radius: 50%;
-    transition: all 0.3s;
-    cursor: pointer;
+li #delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
-
-li #delete:hover{
-    color: red;
-    background: rgba(49, 49, 49, 0.582);
+li #delete:hover {
+  color: red;
+  background: rgba(49, 49, 49, 0.582);
 }
 
-li #fly{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    font-size: 13px;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    border-radius: 50%;
-    transition: all 0.3s;
-    cursor: pointer;
+li #fly {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
-li #fly:hover{
-    color: red;
-    background: rgba(49, 49, 49, 0.582);
+li #fly:hover {
+  color: red;
+  background: rgba(49, 49, 49, 0.582);
 }

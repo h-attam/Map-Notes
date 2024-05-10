@@ -4,14 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Map Notes</title>
-    <!-- CSS -->
+
+    <!-- css -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Bootstrap İcon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>,
-    <!-- Leaflet css -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
+
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- leaflet css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
   </head>
   <body>
     <aside>
@@ -25,39 +34,32 @@
           <div class="field">
             <label for="date">Tarih Ekle</label>
             <input type="date" id="date" />
-            <div class="field">
-              <label for="status">Durum</label>
-              <select name="" id="status">
-                <option value="park">Park Yeri</option>
-                <option value="home">Ev</option>
-                <option value="Job">İş</option>
-                <option value="goto">Ziyaret Edilecek</option>
-              </select>
-            </div>
+          </div>
+          <div class="field">
+            <label for="status">Durum</label>
+            <select name="" id="status">
+              <option value="park">Park Yeri</option>
+              <option value="home">Ev</option>
+              <option value="job">İş</option>
+              <option value="goto">Ziyaret Edilecek</option>
+            </select>
           </div>
           <button>Ekle</button>
         </form>
-        <ul>
-            <li>
-                <div>
-                    <p>Gezilecek Yer</p>
-                    <p><span>Tarih:</span>09-05-2024</p>
-                    <p><span>Durum:</span>Ziyaret</p>
-                </div>
-                <i class="bi bi-x" id="delete"></i>
-                <i class="bi bi-airplane-fill" id="fly"></i>
-            </li>
-        </ul>
+        <ul></ul>
       </div>
     </aside>
 
     <div id="map"></div>
 
-     <!-- Leaflet Js -->
- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
- integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
- crossorigin=""></script>
+    <!-- leaflet js -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    
     <!-- js file -->
- <script src="main.js" type="module"></script>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
